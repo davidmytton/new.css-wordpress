@@ -1,0 +1,16 @@
+/*
+Theme Name: new.css WordPress
+Author: David Mytton
+Author URI: https://davidmytton.blog
+Description: A lightweight, minimalist WordPress theme based on https://newcss.net/
+Tags: blog, one-column, custom-menu, featured-image-header, featured-images, minimal, minimalist, lightweight
+Version: 2020.01
+Requires at least: 5.4
+Tested up to: 5.4
+Requires PHP: 7.0
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Text Domain: newcss
+*/
+ 
+@import url('assets/css/lite.css');
