@@ -34,7 +34,7 @@ jobs:
     - name: Move .css release artifacts to dist
       run: mv *.css newcss/
     - name: Move screenshot to dist
-      run: mv screenshot newcss/
+      run: mv screenshot.png newcss/
     - name: Move readme to dist
       run: mv readme.txt newcss/
     - name: Archive release artifacts
