@@ -19,24 +19,37 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+
     - name: Create assets dir
       run: mkdir assets
+
     - name: Create assets/css dir
       run: mkdir assets/css/
+
     - name: Install dependencies
       run: npm ci
+
     - name: Copy min.css to release dir
-      run: cp node_modules/\@exampledev/new.css/new.css assets/css/
+      run: cp node_modules/\@exampledev/new.css/new.css assets/css/new.css
+
     - name: Create dist dir
       run: mkdir newcss
+
+    - name: Move assets to dist
+      run: mv assets/ newcss/
+
     - name: Move .php release artifacts to dist
       run: mv *.php newcss/
+
     - name: Move .css release artifacts to dist
       run: mv *.css newcss/
+
     - name: Move screenshot to dist
       run: mv screenshot.png newcss/
+
     - name: Move readme to dist
       run: mv README.txt newcss/
+
     - name: Archive release artifacts
       uses: actions/upload-artifact@v1
       with:
