@@ -20,23 +20,7 @@ if ( post_password_required() ) {
         <h3><?php _e( 'Comments', 'newcss' ); ?></h3>
         <?php if ( have_comments() ) : ?>
         <ul>
-            <?php 
-            // Get only the approved comments
-            $args = array(
-                'status' => 'approve'
-            );
-            
-            // The comment Query
-            $comments_query = new WP_Comment_Query;
-            $comments = $comments_query->query( $args );
-            
-            // Comment Loop
-            foreach ( $comments as $comment ): ?>
-            <li>
-                <?php echo get_comment_text($comment->comment_ID); ?><br />
-                <small>- <?php echo get_comment_author($comment->comment_ID); ?> <small>(<time><?php echo get_comment_date(false, $comment->comment_ID); ?> <?php echo get_comment_time(false, $comment->comment_ID); ?></time>)</small>
-            </li>
-            <?php endforeach; ?>
+            <?php wp_list_comments(); ?>
         </ul>
 
         <?php
