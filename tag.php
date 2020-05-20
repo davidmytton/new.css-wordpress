@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying the list of posts in a tag.
+ *
+ * @package    newcss
+ * @copyright  Copyright (c) 2020, David Mytton <david@davidmytton.co.uk> (https://davidmytton.blog)
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
+ */
+
+get_header(); ?>
     <main id="content">
         <h2><?php _e( 'Tag:', 'newcss' ); ?> <?php single_cat_title(); ?></h2>
         <ul>

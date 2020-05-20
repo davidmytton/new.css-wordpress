@@ -1,4 +1,12 @@
 <?php
+/**
+ * The template for displaying the comments and comment form.
+ *
+ * @package    newcss
+ * @copyright  Copyright (c) 2020, David Mytton <david@davidmytton.co.uk> (https://davidmytton.blog)
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
+ */
+
 /*
  * If the current post is protected by a password and
  * the visitor has not yet entered the password we will

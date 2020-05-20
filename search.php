@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying search results.
+ *
+ * @package    newcss
+ * @copyright  Copyright (c) 2020, David Mytton <david@davidmytton.co.uk> (https://davidmytton.blog)
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
+ */
+
+get_header(); ?>
     <main id="content">
         <h2>Search results: <?php get_search_query(); ?></h2>
         <ul>

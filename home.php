@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying the homepage.
+ *
+ * @package    newcss
+ * @copyright  Copyright (c) 2020, David Mytton <david@davidmytton.co.uk> (https://davidmytton.blog)
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
+ */
+
+get_header(); ?>
     <main id="content">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         

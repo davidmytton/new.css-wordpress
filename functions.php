@@ -1,5 +1,13 @@
 <?php
 /**
+ * The functions and definitions.
+ *
+ * @package    newcss
+ * @copyright  Copyright (c) 2020, David Mytton <david@davidmytton.co.uk> (https://davidmytton.blog)
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
+ */
+
+/**
  * First, let's set the maximum content width based on the theme's design and stylesheet.
  * This will limit the width of all uploaded images and embeds.
  */
