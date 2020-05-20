@@ -34,7 +34,7 @@ if ( post_password_required() ) {
             foreach ( $comments as $comment ): ?>
             <li>
                 <?php echo get_comment_text($comment->comment_ID); ?><br />
-                <small>- <?php echo get_comment_author($comment->comment_ID); ?> <small>(<time><?php echo get_comment_date($comment->comment_ID); ?> <?php echo get_comment_time($comment->comment_ID); ?></time>)</small>
+                <small>- <?php echo get_comment_author($comment->comment_ID); ?> <small>(<time><?php echo get_comment_date(false, $comment->comment_ID); ?> <?php echo get_comment_time(false, $comment->comment_ID); ?></time>)</small>
             </li>
             <?php endforeach; ?>
         </ul>
