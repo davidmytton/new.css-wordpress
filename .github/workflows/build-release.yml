@@ -36,7 +36,7 @@ jobs:
     - name: Move screenshot to dist
       run: mv screenshot.png newcss/
     - name: Move readme to dist
-      run: mv readme.txt newcss/
+      run: mv README.txt newcss/
     - name: Archive release artifacts
       uses: actions/upload-artifact@v1
       with:
