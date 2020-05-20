@@ -18,7 +18,9 @@ A lightweight, minimalist WordPress theme based on [new.css](https://newcss.net)
 If working on this theme:
 
 1. `npm install`
-2. `cp node_modules/\@exampledev/new.css/new.css assets/css/`
+2. `mkdir assets`
+3. `mkdir assets/css/`
+4. `cp node_modules/\@exampledev/new.css/new.css assets/css/`
 
 == Changelog ==
 
