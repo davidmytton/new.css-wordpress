@@ -1,25 +1,35 @@
 <?php get_header(); ?>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    
-    <article>
-        <h2><?php the_title(); ?></h2>
-        <small><p>Published <time><?php the_date(); ?></time> in <?php the_category(', '); ?>.</p></small>
-        <?php
-        if ( has_post_thumbnail() ) {
-            the_post_thumbnail();
-        }
-        ?>
-        <section>
-            <?php the_content(); ?>
-        </section>
-    </article>
-    
-    <?php endwhile; ?>
+    <main id="content">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <h2><?php the_title(); ?></h2>
+            <small><p><?php _e( 'Published', 'newcss' ); ?> <time><?php the_date(); ?></time> <?php _e( 'in', 'newcss' ); ?> <?php the_category(', '); ?>. <?php if (has_tag()): ?> <?php the_tags(); ?>.<?php endif; ?></p></small>
+            <?php
+            if ( has_post_thumbnail() ) {
+                the_post_thumbnail('post-thumbnail', [ 'alt' => get_the_title() ]);
+            }
+            ?>
+            <section>
+                <?php the_content(); ?>
+            </section>
+        </article>
 
-    <aside>
-        <h3>About the author</h3>
-        <p><?php echo get_bloginfo('description'); ?> <a href="/start/">Read more</a>.</p>
-    </aside>
-    
-    <?php endif; ?>
+        <?php wp_link_pages(); ?>
+        
+        <?php endwhile; ?>
+
+        <aside>
+            <h3><?php _e( 'About the author', 'newcss' ); ?></h3>
+            <p><?php echo get_bloginfo('description'); ?></p>
+        </aside>
+        
+        <?php
+        // If comments are open or we have at least one comment, load up the comment template.
+        if ( comments_open() || get_comments_number() ) :
+            comments_template();
+        endif;
+        ?>
+        <?php endif; ?>
+    </main>
 <?php get_footer(); ?>

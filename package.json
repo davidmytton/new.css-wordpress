@@ -1,0 +1,11 @@
+{
+    "name": "newcss-wordpress",
+    "author": "David Mytton <david@davidmytton.co.uk> (https://davidmytton.blog)",
+    "description": "A lightweight, minimalist WordPress theme based on https://newcss.net/",
+    "license": "GPL-2.0-or-later",
+    "repository": "github:davidmytton/new.css-wordpress",
+    "version": "1.0.0",
+    "dependencies": {
+        "@exampledev/new.css": "1.1.3"
+    }
+}

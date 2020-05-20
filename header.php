@@ -4,29 +4,11 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- WordPress Theme: https://github.com/davidmytton/new.css-wordpress -->
-    <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
-    <style type="text/css">
-    header h1 a {
-        color: var(--nc-tx-1);
-    }
-
-    article h2 a {
-        color: var(--nc-tx-1);
-        text-decoration: none;
-    }
-    
-    nav a {
-        padding-right: 0.5em;
-    }
-
-    figcaption {
-        font-size: small;
-    }
-    </style>
-    <?php wp_head(); ?>
+    <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); wp_head(); ?>
 </head>
-<body>
-    <header>    
+<body <?php body_class(); ?>>
+    <header>
+        <a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'newcss' ); ?></a>
         <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         <nav>
         <?php
