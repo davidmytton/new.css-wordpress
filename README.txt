@@ -24,6 +24,9 @@ If working on this theme:
 
 == Changelog ==
 
+= 1.0.1 (2020-05-21) =
+* Set iframe max-width to resolve scaling issue on mobile e.g. when embedding YouTube videos
+
 = 1.0.0 (2020-05-20) =
 * Update to [new.css 1.1.3](https://github.com/xz/new.css/releases/tag/v1.1.3).
 * WordPress Theme Directory compatible release.

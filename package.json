@@ -4,7 +4,7 @@
     "description": "A lightweight, minimalist WordPress theme based on https://newcss.net/",
     "license": "GPL-2.0-or-later",
     "repository": "github:davidmytton/new.css-wordpress",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "@exampledev/new.css": "1.1.3"
     }
