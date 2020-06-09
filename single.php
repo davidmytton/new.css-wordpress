@@ -13,7 +13,7 @@ get_header(); ?>
         
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <h2><?php the_title(); ?></h2>
-            <small><p><?php _e( 'Published', 'newcss' ); ?> <time><?php the_date(); ?></time> <?php _e( 'in', 'newcss' ); ?> <?php the_category(', '); ?>. <?php if (has_tag()): ?> <?php the_tags(); ?>.<?php endif; ?></p></small>
+            <small><p><?php _e( 'Published', 'newcss' ); ?> <time><?php the_date(); ?></time><?php if (get_the_modified_date() != get_the_date()): ?> (<?php _e( 'updated', 'newcss' ); ?>: <time><?php the_modified_date(); ?></time>)<?php endif; ?> <?php _e( 'in', 'newcss' ); ?> <?php the_category(', '); ?>. <?php if (has_tag()): ?> <?php the_tags(); ?>.<?php endif; ?></p></small>
             <?php
             if ( has_post_thumbnail() ) {
                 the_post_thumbnail('post-thumbnail', [ 'alt' => get_the_title() ]);
