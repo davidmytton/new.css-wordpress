@@ -24,14 +24,18 @@ If working on this theme:
 
 == Changelog ==
 
-= 1.0.1 (2020-05-21) =
+=== 1.0.2 (2020-06-23) ===
+* Added "updated" date when viewing a post if the post has been modified since publishing.
+* Fixed [various issues in the WordPress theme review process](https://themes.trac.wordpress.org/ticket/84352#comment:2).
+
+=== 1.0.1 (2020-05-21) ===
 * Set iframe max-width to resolve scaling issue on mobile e.g. when embedding YouTube videos
 
-= 1.0.0 (2020-05-20) =
+=== 1.0.0 (2020-05-20) ===
 * Update to [new.css 1.1.3](https://github.com/xz/new.css/releases/tag/v1.1.3).
 * WordPress Theme Directory compatible release.
 
-= 0.9.0 (2020-05-19) =
+=== 0.9.0 (2020-05-19) ===
 * Initial version based on https://newcss.net/ but not WordPress Theme directory compatible.
 
 == Resources ==
