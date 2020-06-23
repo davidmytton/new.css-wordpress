@@ -17,8 +17,6 @@ if ( ! function_exists( 'newcss_setup' ) ) {
      */
     function newcss_setup() {
 
-        wp_enqueue_style('newcss-dist', get_template_directory_uri() . '/assets/css/new.css');
-
         /**
          * First, let's set the maximum content width based on the theme's design and stylesheet.
          * This will limit the width of all uploaded images and embeds.
@@ -62,7 +60,8 @@ if ( ! function_exists( 'newcss_setup' ) ) {
 add_action( 'after_setup_theme', 'newcss_setup' );
 
 function newcss_css() {
-	wp_enqueue_style( 'newcss-customised', get_stylesheet_uri(), array(), '1.0.0', 'all' );
+    wp_enqueue_style( 'newcss-dist', get_template_directory_uri() . '/assets/css/new.css', array(), '1.1.3', 'all' );
+    wp_enqueue_style( 'newcss-customised', get_stylesheet_uri(), array(), '1.0.2', 'all' );
 }
 
 add_action( 'wp_enqueue_scripts', 'newcss_css' );
