@@ -6,10 +6,10 @@ Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-A lightweight, minimalist WordPress theme based on [new.css](https://newcss.net).
+A lightweight, minimalist WordPress theme based on [new.css](https://newcss.net). Autodetects and updates to light/dark mode based on the user setting.
 
 == Description ==
-A lightweight, minimalist WordPress theme based on [new.css](https://newcss.net). The stylesheet is slightly modified for readability on a blog. The modifications are implemented by overriding the CSS in [style.css](/style.css).
+A lightweight, minimalist WordPress theme based on [new.css](https://newcss.net). Autodetects and updates to light/dark mode based on the user setting. The stylesheet is slightly modified for readability on a blog. The modifications are implemented by overriding the CSS in [style.css](/style.css).
 
 == Example ==
 [My blog](https://davidmytton.blog) is running this theme.
