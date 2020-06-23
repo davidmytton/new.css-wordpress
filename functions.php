@@ -22,7 +22,7 @@ if ( ! function_exists( 'newcss_setup' ) ) {
          * This will limit the width of all uploaded images and embeds.
          */
         if ( ! isset( $content_width ) )
-        $content_width = 750; /* pixels */
+            $content_width = 750; /* pixels */
      
         /**
          * Add default posts and comments RSS feed links to <head>.
