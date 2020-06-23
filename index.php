@@ -1,4 +1,4 @@
-<<?php
+<?php
 /**
  * The template for displaying a list of posts for any page that does not have a template defined.
  *
