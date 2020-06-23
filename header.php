@@ -14,6 +14,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
     <header>
         <a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'newcss' ); ?></a>
         <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
