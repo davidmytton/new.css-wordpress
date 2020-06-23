@@ -9,7 +9,7 @@
 
 get_header(); ?>
     <main id="content">
-        <h2>Search results: <?php get_search_query(); ?></h2>
+        <h2><?php _e( 'Search results:', 'newcss' ); ?> <?php get_search_query(); ?></h2>
         <ul>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <li><a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_title(); ?></a> <small>(<time><?php the_date(); ?></time>)</small><br /><small><?php the_excerpt(); ?></small></li>
