@@ -62,7 +62,7 @@ if ( ! function_exists( 'newcss_setup' ) ) {
 add_action( 'after_setup_theme', 'newcss_setup' );
 
 function newcss_css() {
-	wp_enqueue_style( 'newcss', get_stylesheet_uri(), array(), '1.0.0', 'all' );
+	wp_enqueue_style( 'newcss-customised', get_stylesheet_uri(), array(), '1.0.0', 'all' );
 }
 
 add_action( 'wp_enqueue_scripts', 'newcss_css' );
