@@ -62,6 +62,9 @@ add_action( 'after_setup_theme', 'newcss_setup' );
 function newcss_css() {
     wp_enqueue_style( 'newcss-dist', get_template_directory_uri() . '/assets/css/new.css', array(), '1.1.3', 'all' );
     wp_enqueue_style( 'newcss-customised', get_stylesheet_uri(), array(), '1.0.2', 'all' );
+
+    if ( is_singular() ) 
+        wp_enqueue_script( 'comment-reply' );
 }
 
 add_action( 'wp_enqueue_scripts', 'newcss_css' );
