@@ -7,13 +7,6 @@
  * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
  */
 
-/**
- * First, let's set the maximum content width based on the theme's design and stylesheet.
- * This will limit the width of all uploaded images and embeds.
- */
-if ( ! isset( $content_width ) )
-    $content_width = 750; /* pixels */
-
 if ( ! function_exists( 'newcss_setup' ) ) {
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -23,6 +16,13 @@ if ( ! function_exists( 'newcss_setup' ) ) {
      * support post thumbnails.
      */
     function newcss_setup() {
+
+        /**
+         * First, let's set the maximum content width based on the theme's design and stylesheet.
+         * This will limit the width of all uploaded images and embeds.
+         */
+        if ( ! isset( $content_width ) )
+        $content_width = 750; /* pixels */
      
         /**
          * Add default posts and comments RSS feed links to <head>.
