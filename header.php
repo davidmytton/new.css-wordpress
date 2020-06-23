@@ -22,7 +22,7 @@
         <?php
         echo $nav_menu = strip_tags(wp_nav_menu(
             array(
-                'menu' => 'primary',
+                'theme_location' => 'primary',
                 'depth' => 0,
                 'container' => false,
                 'echo' => false
