@@ -14,7 +14,7 @@ get_header(); ?>
         <h2><?php the_title(); ?></h2>
         <?php
         if ( has_post_thumbnail() ) {
-            the_post_thumbnail('post-thumbnail', [ 'alt' => get_the_title() ]);
+            the_post_thumbnail('post-thumbnail', [ 'alt' => esc_attr(get_the_title()) ]);
         }
         ?>
         <section>
